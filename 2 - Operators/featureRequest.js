@@ -66,4 +66,5 @@ console.log();
 console.log("Ternary Operator Script");
 let num = -100;
 let ternaryCheck = num > 0 ? true : false;
-console.log(ternaryCheck)
+console.log(`num > 0 ? true : false
+Result : ${ternaryCheck}`)
