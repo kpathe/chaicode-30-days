@@ -46,6 +46,7 @@ do {
 } while (index <= num);
 console.log(fact); //is bar kar liya maine factorial. nhi to 1st sem ke c ke practical mei bna hi nhi tha 
 // 08:44 16/07/2024
+console.log();
 
 // Activity 4: Nested Loops
 // 7.
