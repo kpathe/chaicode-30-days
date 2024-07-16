@@ -11,13 +11,14 @@ for (let i = 1; i <= 10; i++) {
 
 // Activity 2: While Loop
 // 3.
-let i = 0;
+let i = 1;
 let sum = 0;
 while (i <= 10) {
     sum = sum + i
     i++
 }
 console.log(sum);
+console.log();
 
 // 4.
 let index = 10;
