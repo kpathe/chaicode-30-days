@@ -7,7 +7,6 @@
 - [x] Day 3 - [Control Structures](https://github.com/kpathe/chaicode-30-days/tree/main/3%20-%20Control%20Structures)
 
 - [x] Day 4 - [Loops](https://github.com/kpathe/chaicode-30-days/tree/main/4%20-%20Loops)
-  
 - [ ] Day 5 - [Functions]
 - [ ] Day 6 - [Arrays]
 - [ ] Day 7 - [Objects]
