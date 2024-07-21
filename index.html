@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadiYo Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background: white;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 9999px;
+            background: #f9f9f9;
+            padding: 0.25rem 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <!-- RadiYo Header -->
+        <header class="py-4">
+            <div class="flex items-center">
+                <i class="fas fa-broadcast-tower text-2xl mr-2"></i>
+                <h1 class="text-xl font-bold">RadiYo</h1>
+            </div>
+        </header>
+
+        <!-- Top Navbar -->
+        <div class="flex items-center justify-between py-4">
+            <button onclick="toggleSidebar()" class="text-gray-700">
+                <i class="fas fa-bars text-2xl"><img src="https://www.svgrepo.com/show/445112/explore-solid.svg" style="width: 30px;"
+                        alt=""></i>
+            </button>
+            <div class="flex items-center space-x-4">
+                <input type="text" class="search-bar" placeholder="Search...">
+                <a href="#" class="text-gray-700">
+                    <img src="https://www.svgrepo.com/show/520955/sign-in.svg" alt="Sign In" class="w-6 h-6">
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-gray-300 rounded mr-4"></div>
+                        <div>
+                            <h2 class="text-lg font-bold">Title of Audio</h2>
+                            <p class="text-gray-600">Listens: <span class="font-medium">1234</span> Likes: <span
+                                    class="font-medium">567</span></p>
+                            <div class="flex items-center space-x-2">
+                                <span class="bg-gray-200 px-2 py-1 rounded">Logo</span>
+                                <span class="bg-gray-200 px-2 py-1 rounded">Station Name</span>
+                                <button class="bg-blue-500 text-white px-4 py-1 rounded">Tuned</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <div class="flex items-center">
+                        <div class="w-16 h-16 bg-gray-300 rounded mr-4"></div>
+                        <div>
+                            <h2 class="text-lg font-bold">Title of Audio</h2>
+                            <p class="text-gray-600">Listens: <span class="font-medium">1234</span> Likes: <span
+                                    class="font-medium">567</span></p>
+                            <div class="flex items-center space-x-2">
+                                <span class="bg-gray-200 px-2 py-1 rounded">Logo</span>
+                                <span class="bg-gray-200 px-2 py-1 rounded">Station Name</span>
+                                <button class="bg-blue-500 text-white px-4 py-1 rounded">Tune</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat as needed -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow">
+            <div class="flex justify-around">
+                <a href="#" class="text-gray-700">
+                    <img src="https://www.svgrepo.com/show/529026/home.svg" alt="Home" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-gray-700">
+                    <img src="https://www.svgrepo.com/show/532473/heart.svg" alt="Favourites" class="w-6 h-6">
+                </a>
+                <a href="#" class="text-gray-700">
+                    <img src="https://www.svgrepo.com/show/528425/music-note-2.svg" alt="Studio" class="w-6 h-6">
+                </a>
+
+                <a href="#" class="text-gray-700 flex items-center"><img
+                        src="https://www.svgrepo.com/show/528684/station.svg" alt="Stations" class="w-6 h-6 mr-2">
+                </a>
+
+                <a href="#" class="text-gray-700">
+                    <img src="https://www.svgrepo.com/show/524675/library.svg" alt="Library" class="w-6 h-6">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar w-64 bg-gray-100 p-4 flex flex-col justify-between">
+        <div>
+            <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+            <ul class="space-y-4">
+
+                <li><a href="#" class="text-gray-700 flex items-center"><img
+                            src="https://www.svgrepo.com/show/525880/fire-minimalistic.svg" alt="Trending"
+                            class="w-6 h-6 mr-2"> Trending</a></li>
+                <li><a href="#" class="text-gray-700 flex items-center"><img
+                            src="https://www.svgrepo.com/show/509108/feed.svg" alt="Feed" class="w-6 h-6 mr-2"
+                            style="width: 20px;"> Feed</a>
+                </li>
+                <li><a href="#" class="text-gray-700 flex items-center"><img
+                            src="https://www.svgrepo.com/show/432324/stream-on.svg" alt="Live" class="w-6 h-6 mr-2">
+                        Live</a>
+                </li>
+
+                <li><a href="#" class="text-gray-700 flex items-center"><img
+                            src="https://www.svgrepo.com/show/529145/podcast.svg" alt="Podcast" class="w-6 h-6 mr-2">
+                        Podcast</a></li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>
