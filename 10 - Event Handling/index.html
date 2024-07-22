@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Activities</title>
+    <style>
+        #mousebox {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px 0;
+            color:white;
+            background-color: blue;
+        }
+
+        .box {
+            height: 245px;
+            width: 220px;
+            border: 2px solid black;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #image[data-hidden] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Activity 1: Basic Event Handling -->
+    <h2>Activity 1: Basic Event Handling</h2>
+    <button id="clickButton">Click Me</button>
+    <p id="paragraph">Click the button above To know a wacky secret of Google.
+        <br>
+        <br>
+    </p>
+
+    <h4>Double Click Image to Cast a Vanish Spell</h4>
+    <div class="box" id="imgDiv">
+        <img id="image" src="https://deadline.com/wp-content/uploads/2023/04/MCDHAPO_EC151.jpg?w=800" width="200">
+    </div>
+
+
+    <!-- Activity 2: Mouse Events -->
+    <h2>Activity 2: Mouse Events</h2>
+    <div id="mousebox"><p style="text-align: center;">Mouse Over Me</p></div>
+    
+
+    <!-- Activity 3: Keyboard Events -->
+    <h2>Activity 3: Keyboard Events</h2>
+    <input type="text" id="keydownInput" placeholder="Press a key">
+    <p id="keyDisplay" style="font-family: cursive;">TEXT ENTERED ABOVE WILL DISPLAY HERE</p>
+
+    <!-- Activity 4: Form Events -->
+    <h2>Activity 4: Form Events</h2>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <button type="submit">Submit</button>
+    </form>
+    <select id="dropdown">
+        <option value="JavaScript">Option 1</option>
+        <option value="C++">Option 2</option>
+        <option value="Python">Option 3</option>
+    </select>
+    
+    <p id="selectedValue">Selected Option Appears here</p>
+
+    <!-- Activity 5: Event Delegation -->
+    <h2>Activity 5: Event Delegation</h2>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <div id="parentElement">
+        <p>Dynamic Elements added Here</p>
+        <!-- Dynamically added elements will go here -->
+    </div>
+
+    <script src="events.js">
+        // Your JavaScript code will go here for each task
+    </script>
+
+</body>
+
+</html>
