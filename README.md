@@ -8,6 +8,9 @@
 
 - [x] Day 4 - [Loops](https://github.com/kpathe/chaicode-30-days/tree/main/4%20-%20Loops)
 - [x] Day 5 - [Functions](https://github.com/kpathe/chaicode-30-days/tree/main/5%20-%20Functions%20Q)
-- [ ] Day 6 - [Arrays]
-- [ ] Day 7 - [Objects]
+- [x] Day 6 - [Arrays](https://github.com/kpathe/chaicode-30-days/tree/main/6%20-%20Arrays)
+- [x] Day 7 - [Objects](https://github.com/kpathe/chaicode-30-days/tree/main/7%20-%20Objects)
+- [x] Day 8 - [ES6+ Features](https://github.com/kpathe/chaicode-30-days/tree/main/8%20-%20ES6%20%2B%20Features)
+- [x] Day 9 - [DOM Manipulation](https://github.com/kpathe/chaicode-30-days/tree/main/9%20-%20DOM%20Manipulation)
+- [x] Day 10 - [Events Handling](https://github.com/kpathe/chaicode-30-days/tree/main/10%20-%20Event%20Handling)
       
