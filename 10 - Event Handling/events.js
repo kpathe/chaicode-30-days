@@ -19,23 +19,23 @@ let image = document.getElementById("image")
 imageDiv.addEventListener("dblclick", function (e) {
     console.log(e.target);
 
-    // image.toggleAttribute("data-hidden")
+    if (image.style.visibility === "visible") {
+        image.style.visibility = "hidden";
+    } else {
+        image.style.visibility = "visible";
+    }
 
-    image.setAttribute("src", "")
+    // if (image.style.visibility === "hidden") {
+    //     image.style.visibility = "visible";
+    // }
+
+    console.log(image.style.visibility);
 
 })
 
-imageDiv.addEventListener("click", function (e) {
-    // console.log(e.target);
-
-    // image.toggleAttribute("data-hidden")
-
-    image.setAttribute("src", "https://deadline.com/wp-content/uploads/2023/04/MCDHAPO_EC151.jpg?w=800")
-
-})
 
 
-// /Activity 2: Mouse Events
+// Activity 2: Mouse Events
 // 3.
 let mouseBox = document.getElementById("mousebox")
 
@@ -98,9 +98,9 @@ dropDown.addEventListener("change", function (e) {
 // Activity 5: Event Delegation
 
 // 9.
-document.getElementById("list").addEventListener("click",function(e){
+document.getElementById("list").addEventListener("click", function (e) {
     if (e.target && e.target.nodeName == "LI") {
-        console.log("Clicked item : ",e.target.textContent);
+        console.log("Clicked item : ", e.target.textContent);
     }
 })
 
@@ -108,14 +108,14 @@ document.getElementById("list").addEventListener("click",function(e){
 // 10.
 let parentEle = document.getElementById("parentElement")
 
-parentEle.addEventListener("click", function(e){
+parentEle.addEventListener("click", function (e) {
     if (e.target && e.target.matches('.dynamic-item')) {
-        console.log("Dynamically added item clicked",event.target.textContent);
+        console.log("Dynamically added item clicked", event.target.textContent);
     }
 })
 
 
 const li = document.createElement('p')
-li.className ="dynamic-item"
+li.className = "dynamic-item"
 li.textContent = "Hi There"
 parentEle.appendChild(li)
